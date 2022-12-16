@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<script src="https://tamjptvopenaccessportal.on.drv.tw/website/mypicture//UNTITLED.js"></script>
+	<style type="text/css">
+		td, td input, td textarea {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+		}
+
+		.tbl-header {
+			text-align: center;
+			margin-bottom: 4px;
+		}
+
+		.max-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		.under {
+			text-decoration: underline;
+		}
+
+		.center-block {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.h-10 {
+			height: 10px;
+		}
+
+		.h-20 {
+			height: 20px;
+		}
+
+		.h-30 {
+			height: 30px;
+		}
+
+		.h-50 {
+			height: 50px;
+		}
+
+		.h-70 {
+			height: 70px;
+		}
+
+		.h-80 {
+			height: 80px;
+		}
+
+		.h-90 {
+			height: 90px;
+		}
+
+		.h-100 {
+			height: 100px;
+		}
+
+		.input td {
+			height: 20px;
+		}
+
+		.b-0 {
+			border: none;
+		}
+
+		.w-100 {
+			width: 100%;
+		}
+
+		.col2 > * {
+			width: 100%;
+		}
+
+		.camera_icon {
+			height: 250px;
+			width: 250px;
+		}
+
+		input:focus {
+			outline: none !important;
+			border-color: #719ECE;
+			box-shadow: 0 0 10px #719ECE;
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		.table {
+			width: 1050px;
+			border-collapse: collapse;
+		}
+
+		@media print {
+			.p-0 {
+				padding: 0px;
+			}
+
+			.w-sm {
+				width: 50px !important;
+			}
+
+			.w-md {
+				width: 70px !important;
+			}
+
+			.w-lg {
+				width: 150px !important;
+			}
+
+			.ntb {
+				width: 100% !important;
+			}
+
+			.br-1 {
+				border-right: 1px solid black;
+			}
+
+			.sm-w {
+				width: 20px;
+			}
+
+			.lg-w {
+				width: 100px !important;
+			}
+
+			.bb-0 td {
+				border-bottom: none;
+			}
+
+			table {
+				border-collapse: collapse;
+				border: 3px solid black;
+			}
+
+				table tbody tr td {
+					padding-left: 5px;
+				}
+
+			.tdBold {
+				border: 3px solid black;
+			}
+
+			a {
+				display: none;
+			}
+
+			.camera_icon {
+				height: 0px;
+				width: 75px;
+			}
+
+			.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+				float: left;
+			}
+
+			.col-sm-12 {
+				width: 100%;
+			}
+
+			.col-sm-11 {
+				width: 91.66666667%;
+			}
+
+			.col-sm-10 {
+				width: 83.33333333%;
+			}
+
+			.col-sm-9 {
+				width: 75%;
+			}
+
+			.col-sm-8 {
+				width: 66.66666667%;
+			}
+
+			.col-sm-7 {
+				width: 58.33333333%;
+			}
+
+			.col-sm-6 {
+				width: 50%;
+			}
+
+			.col-sm-5 {
+				width: 41.66666667%;
+			}
+
+			.col-sm-4 {
+				width: 33.33333333%;
+			}
+
+			.col-sm-3 {
+				width: 25%;
+			}
+
+			.col-sm-2 {
+				width: 16.66666667%;
+			}
+
+			.col-sm-1 {
+				width: 8.33333333%;
+			}
+
+			.table {
+				width: 100%;
+			}
+
+			.sm-font {
+				margin-right: 5% !important;
+			}
+
+			.table {
+				width: 90%;
+			}
+
+			.justPar {
+				text-align: justify;
+				text-justify: inter-word;
+				width: 700px
+			}
+
+			@page {
+				size: auto;
+				margin: 5px;
+				padding: 10px;
+			}
+
+			button {
+				display: none;
+			}
+		}
+
+		@media screen, print {
+		}
+
+		.mb-0 {
+			margin-bottom: 0px;
+		}
+
+		.mt-0 {
+			margin-top: 0px;
+		}
+
+		.br-none {
+			border-right: none;
+		}
+
+		.bl-none {
+			border-left: none;
+		}
+
+		.sm-font {
+			font-size: 10px;
+		}
+
+		.md-font {
+			font-size: 15px;
+		}
+
+		.float-right {
+			float: right;
+		}
+
+		.text-left {
+			text-align: left;
+		}
+
+		.sm-font {
+			margin-right: 420px;
+			text-align: right !important;
+		}
+
+		.w-100 {
+			width: 100%;
+		}
+
+		.moa-logo {
+			width: 100px;
+		}
+
+		.indent {
+			text-indent: 50px;
+		}
+
+		.caps {
+			text-transform: uppercase;
+		}
+
+		.nocaps {
+			text-transform: none;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.justPar {
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		.font10 {
+			font-size: 18.333px !important;
+		}
+
+		.plus_icon {
+			width: 50px;
+		}
+
+		.imageHolder {
+			width: 150px;
+		}
+
+		.table {
+			border-collapse: collapse;
+			border: 2px solid black;
+		}
+
+			.table tbody tr td {
+				padding-left: 5px;
+			}
+
+			.table tbody tr .left {
+				border-right: 2px solid black !important;
+			}
+
+		.left {
+			border-right: 2px solid black !important;
+		}
+
+		.tdBold {
+			border: 2px solid black;
+		}
+
+		input, textarea {
+			background-color: transparent;
+		}
+
+		.pl-0 {
+			padding-left: 0px !important;
+		}
+
+		.bb-0 {
+			border-bottom: none;
+		}
+
+		.p-5 {
+			padding-left: 20px !important;
+		}
+
+		.br-1 {
+			border-right: 1px solid black;
+		}
+
+		.br-0 {
+			border-right: none;
+		}
+
+		.bl-0 {
+			border-left: none;
+		}
+
+		.p-0 {
+			padding: 0px;
+		}
+	</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+	.camera_icon {
+		background-image: url("../img/<?php echo $studentRow['stud_image']?>");
+	}
+
+	@media print {
+		.imageCheat {
+			width: 170px;
+			height: 170px;
+			display: block;
+		}
+	}
+</style>
+
+<body style=" text-transform: uppercase;">
+	<p style="font-size:16px; color:red" align="center">
+		<?php if (isset($msg)) {
+		echo $msg;
+		}  ?>
+	</p>
+	<form method="post" action="#" enctype="multipart/form-data">
+		<div class="sm-font">
+			<i> </i>
+			<br>
+			<i> </i>
+			<br>
+			<i> </i>
+			
+
+		</div>
+
+		<table class="max-auto table" border="1">
+			<tbody class="tdBold">
+				<tr class="tdBold">
+					<td class="text-center tdBold" width="15%"><img src="https://psu360.campus-erp.com/PSU/images/PSU.jpg" width="70px"></td>
+					<td colspan="3" class="tbl-header tdBold">
+						<h2 class="mb-0 bold">RESUME</h2>
+						<h5 class="mt-0" style="font-weight: 1;">BACHELOR OF SCIENCE AND TECHNOLOGYfile</h5>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Name</td>
+					<td colspan="2" class="col2">MAR JUSTIN A. TRINIDAD</td>
+					<td rowspan="5" class="text-center imageHolder tdBold">
+						<label for="file_photo" class="file">
+							<img src="https://tamjptvopenaccessportal.on.drv.tw/website/mypicture/psu.jpg" width="200px" height="200" alt="">
+						
+						
+							
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="bold">Address</td>
+					<td colspan="2" class="col2 ">70 liberty ave New rochelle New York 10801</td>
+				</tr>
+				<tr>
+					<td class="bold">Contact Number</td>
+					<td colspan="2" class="col2">914-290-9092</td>
+				</tr>
+				<tr>
+					<td class="bold">Email Address</td>
+					<td colspan="2" class="col2">MARJUSTINT@GMAIL.COM</tr>
+				<tr class="h-80">
+					<td class="bold">Carrer Objective</td>
+					<td colspan="2" class="col2">I.T SUPPORT/WEB DEVELOPER PHP</tr>
+				<tr>
+					<td class="bold tdBold" colspan="4">Work Experience</td>
+				</tr>
+				<tr class="">
+					<td class="bold">Inclusive Date</td>
+					<td class="bold">Employer</td>
+					<td class="bold left" colspan="2">Position</td>
+				</tr>
+
+				
+				<tr class="">
+					<td class="text-center">JULY-OCTOBER</td>
+					<td class="col2"> Stores Specialists Inc.</td>
+					<td class="col2 left" colspan="2">I.T SUPPORT</td>
+				</tr>
+			
+
+
+				<tr class="input">
+					<td class="text-center"> </td>
+					<td class="col2"> </td>
+					<td class="col2 left" colspan="2"> </td>
+				</tr>
+				<?php
+				}
+				?>
+
+				<tr>
+					<td colspan="4" class="bold tdBold">Trainings and Seminars Attended</td>
+
+				</tr>
+				<tr class="input">
+					<td colspan="2" class="bold">Title of Seminar</td>
+					<td colspan="2 " class="bold left">Inclusive Date</td>
+
+				</tr>
+
+				
+				<tr class="input">
+					<td class="col2 bold" colspan="2"></td>
+					<td class="col2 bold left" colspan="2">
+						
+					</td>
+				</tr>
+				
+
+				<tr class="input">
+					<td class="col2 bold" colspan="2"><input type="" name="tsTitle[]" class="b-0"> </td>
+					<td class="col2 bold left" colspan="2"><input type="" name="tsDate[]" class="b-0"> </td>
+				</tr>
+				
+
+				<tr>
+					<td colspan="4" class="bold tdBold">Educational Background</td>
+
+				</tr>
+				<tr class="input">
+					<td class="bold">Level</td>
+					<td class="bold">School</td>
+					<td class="bold left" colspan="2">Inclusive Date</td>
+				</tr>
+				<tr class="input">
+					<td class="col2 bold">Elementary</td>
+					<td class="col2 ">SUNBEAM METHODIST CHRISTIAN SCHOOL</td>
+					<td class="col2 left" colspan="2">2004-2010</td>
+				</tr>
+				<tr class="input">
+					<td class="col2 bold">Highschool</td>
+					<td class="col2 ">BAYAMBANG NATIONAL HIGHSCHOOL</td>
+					<td class="col2 left" colspan="2">2010-2014</td>
+				</tr>
+				<tr class="input">
+					<td class="col2 bold">College</td>
+					<td class="col2 ">PANGASINAN STATE UNIVERSITY</td>
+					<td class="col2 left" colspan="2">2016-2022</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="col2 bold left">
+						Extra Curricular Activities and Awards Received <br>
+						<textarea type="" name="eca" class="b-0 h-30" width="100%">VICE PRESIDENT OF PROGRAMMING UNIT</textarea>
+					</td>
+
+				</tr>
+				<tr>
+					<td colspan="4" class="bold tdBold ">Personal Background</td>
+
+				</tr>
+
+
+				<tr class="input">
+					<td class="">NICKNAME</td>
+					<td class="col2">JUSTIN</td>
+					<td class="">HEIGHT</td>
+					<td class="col2 left">5'6</td>
+				</tr>
+				<tr class="input">
+					<td class="">AGE</td>
+					<td class="col2">24</td>
+					<td class="">WEIGHT</td>
+					<td class="col2 left">55 KG</td>
+				</tr>
+				<tr class="input">
+					<td class="">GENDER</td>
+					<td class="col2">
+						MALE
+					<td class="">CIVIL STATUS</td>
+					<td class="col2 left">SINGLE</td>
+				</tr>
+				<tr class="input">
+					<td class="">RELIGION</td>
+					<td class="col2">BORN AGAIN</td>
+					<td class="">SKILLS</td>
+					<td class="col2 left">
+						COMPUTER PROGRAMMING/KNOWLEDGE IN COMPUTER HARDWARE & SOFTWARE/BASIC MICROSFT WORD, MICROSOFT EXCEL
+					</td>
+				</tr>
+				<tr class="input">
+					<td colspan="6" class="bold tdBold">References</td>
+
+				</tr>
+				<tr>
+					<td class="bold">Name</td>
+					<td class="bold">Position</td>
+					<td class="bold">Company</td>
+					<td class="bold left">Contact Number</td>
+				</tr>
+
+				<tr class="">
+					<td class="col2">LAU EULIZIER</td>
+					<td class="col2"> </td>
+					<td class="col2">UNITED HEALTH CARE</td>
+					<td class="col2 left">8603387028</td>
+				</tr>
+				
+
+				<tr class="">
+					<td class="col2"> </td>
+					<td class="col2"> </td>
+					<td class="col2">  </td>
+					<td class="col2 left"> </td>
+				</tr>
+				<?php
+				}
+				?>
+			
+			</tbody>
+		</table>
+		<div class="text-center" style="margin-top: 20px;">
+			<button onclick="window.print()">Print</button>
+			
+
+		</div>
+	</form>
+
+
+</body>
+</html>
+
