@@ -1090,7 +1090,7 @@ header {
 	z-index: 600;
 }
 header .row {
-	position: relative;
+	position: left;
 	min-height: 66px;
 }
 header .top-bar {
@@ -1099,7 +1099,7 @@ header .top-bar {
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 0px;
 	top: 0;
 }
 header .logo {
